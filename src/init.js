@@ -1,6 +1,11 @@
+// document.body.style.backgroundRepeat = "repeat-y";
 $(document).ready(function(){
   window.dancers = [];
 
+  // $('body').on('click', '.nematode', function(event) {
+  //   $(this).show();
+  // });
+  
   $(".addDancerButton").on("click", function(event){
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one small change to it.
@@ -21,13 +26,26 @@ $(document).ready(function(){
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
     // make a dancer with a random position
-
-    var dancer = dancerMakerFunction(
+    //change this...
+    var dancer = new dancerMakerFunction(
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
-      Math.random() * 1000
+      Math.random() * 1000 + 500
     );
     $('body').append(dancer.$node);
+    window.dancers.push(dancer);
+  });
+  //line up method
+  $(".lineUpButton").on("click", function(event){
+    window.dancers.forEach(function(dancer) {
+      dancer.lineUp()
+    });
+  });
+  //reset dancer positions
+  $(".breakUpButton").on("click", function(event){
+    window.dancers.forEach(function(dancer) {
+      dancer.breakThem()
+    });
   });
 });
 

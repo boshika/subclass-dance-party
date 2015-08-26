@@ -1,27 +1,100 @@
 body, html{
-  height:100%;
-}
+  height:60%;
+  background-image: url("http://il7.picdn.net/shutterstock/videos/3193762/thumb/1.jpg");
+  background-repeat: no-repeat;
+  }
 body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
+  overflow:auto;
 }
+
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
 .title, .addDancerButton{
   padding:5px 12px;
   float:right;
+  text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  /*text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;*/
 }
 .topbar{
-  height:32px;
+  height:25px;
   background-color: #555;
+ 
 }
 .title{
-  background-color: #777;
+  background-color: #5000;
+  font-size: 15px;
+}
+.addDancerButton{
+  font-size: 12px;
+  /*adow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #ff00de, 0 0 40px #ff00de, 0 0 80px #ff00de, 0 0 50px #ff00de, 0 0 100px #ff00de;*/
 }
 .dancer{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+
+}
+.Nematode{
+  background-image: url("http://science.kennesaw.edu/~jdirnber/InvertZoo/LecNematoda/tylocrop1.gif");
+  background-size: 80px 50px;
+ /* background-repeat: no-repeat;*/
+  position:absolute;
+  /*-webkit-box-shadow: 5px 5px 5px #111;
+          box-shadow: 5px 5px 5px #111;  */
+  border-radius: 25px;
+  /*background: #8AC007;*/
+  padding: 20px; 
+  /*width: 200px;
+  height: 150px;*/
+  }
+.Bill {
+   background-image: url("https://media.giphy.com/media/mv9sVnakzbtxS/giphy.gif");
+   background-size: 120px 60px;
+   background-repeat: no-repeat;
+   position:absolute;
+   border: 10px solid transparent;
+   padding: 15px;
+    
+}
+.Drosophila {
+   background-image: url("http://www.igsb.org/images/uploads/ezgif.com-resize_(1).gif");
+   background-size: 120px 60px;
+   background-repeat: no-repeat;
+   position:absolute;
+   border-radius: 40px;
+   padding: 20px; 
+ }
+ .Evolution{
+  background-image: url("https://media.giphy.com/media/ujuo6uFJZOUtW/giphy.gif");
+   background-size: 160px 150px;
+   background-repeat: no-repeat;
+   position:absolute;
+   border-radius: 40px;
+   padding: 20px; 
+ }
+
+ .Tyson{
+  background-image: url("https://media.giphy.com/media/JZOsTRDdxKJBm/giphy.gif");
+   background-size: 140px 90px;
+   background-repeat: no-repeat;
+   position:absolute;
+   /*border-radius: 40px;
+   padding: 20px; */
+ }
+
+/*.spinning-dancer {
+  height: 40px;
+  width: 40px;
+  background-color: blue;
+  position: absolute;
+}*/
+
+.methodButton{
+  padding:5px 12px;
+  float:left;
+  font-size: 12px;
 }
